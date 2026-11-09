@@ -102,7 +102,7 @@
             programmazione in generale.
           </p>
           <div class="chips">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>C / Java / Pyhton</span>
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>C / Java / Python</span>
           </div>
           <div class="facts">
             <div>
@@ -131,8 +131,12 @@
             possibile.
           </p>
           <ul class="cinfo">
-            <li><b>Email</b><a href="mailto:pietrocorradi@outlook.com">pietrocorradi@outlook.com</a></li>
-            <li><b>Telefono</b><a href="tel:+393420115149">+39 342 011 5149</a></li>
+            <li>
+              <b>Email</b><a href="mailto:pietrocorradi@outlook.com">pietrocorradi@outlook.com</a>
+            </li>
+            <li>
+              <b>Telefono</b><a href="tel:+393420115149">+39 342 011 5149</a>
+            </li>
           </ul>
         </div>
         <form id="f">
@@ -204,40 +208,47 @@
           <path d="M9 8.500c0 3.500 3 6.500 6.500 6.500l1-1.500-2-1-1 .8c-1-.4-2-1.400-2.400-2.400l.8-1-1-2z" />
         </svg>WhatsApp</a>
     </div>
-    © 2026 Pietro Corradi · Torino
+    <span class="flinks">© 2026 Pietro Corradi · Torino · <a href="privacy.html">Privacy</a> ·
+      <a href="cookie.html">Cookie</a></span>
   </footer>
   <script>
-document.getElementById("f").addEventListener("submit", async function (e) {
-  e.preventDefault();
-  var form = e.target;
-  var note = document.getElementById("note");
-  var btn = form.querySelector("button[type=submit]");
-  var data = {
-    nome: document.getElementById("nome").value,
-    email: document.getElementById("mail").value,
-    telefono: document.getElementById("telefono").value,
-    messaggio: document.getElementById("msg").value
-  };
-  btn.disabled = true;
-  note.textContent = "Invio in corso…";
-  try {
-    var r = await fetch("https://formspree.io/f/xrppwqbg", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "Accept": "application/json" },
-      body: JSON.stringify(data)
-    });
-    if (r.ok) {
-      note.textContent = "Messaggio inviato! Ti ricontatterò presto.";
-      form.reset();
-    } else {
-      note.textContent = "Qualcosa è andato storto, riprova o scrivimi direttamente.";
-    }
-  } catch (err) {
-    note.textContent = "Errore di connessione, riprova.";
-  }
-  btn.disabled = false;
-});
-</script>
+    document
+      .getElementById("f")
+      .addEventListener("submit", async function (e) {
+        e.preventDefault();
+        var form = e.target;
+        var note = document.getElementById("note");
+        var btn = form.querySelector("button[type=submit]");
+        var data = {
+          nome: document.getElementById("nome").value,
+          email: document.getElementById("mail").value,
+          telefono: document.getElementById("telefono").value,
+          messaggio: document.getElementById("msg").value,
+        };
+        btn.disabled = true;
+        note.textContent = "Invio in corso…";
+        try {
+          var r = await fetch("https://formspree.io/f/xrppwqbg", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+          if (r.ok) {
+            note.textContent = "Messaggio inviato! Ti ricontatterò presto.";
+            form.reset();
+          } else {
+            note.textContent =
+              "Qualcosa è andato storto, riprova o scrivimi direttamente.";
+          }
+        } catch (err) {
+          note.textContent = "Errore di connessione, riprova.";
+        }
+        btn.disabled = false;
+      });
+  </script>
 </body>
 
 </html>
