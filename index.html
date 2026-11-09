@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark" />
+  <title>Pietro Corradi — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="glow"></div>
+  <nav>
+    <a class="logo" href="#home">Pietro<i>.</i>Corradi</a>
+    <ul>
+      <li><a class="l" href="#progetti">Progetti</a></li>
+      <li><a class="l" href="#chi-sono">Chi sono</a></li>
+      <li><a class="l" href="#contatti">Contatti</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="home" class="hero">
+      <div class="pill">Studente di Informatica · Università di Torino</div>
+      <h1>Creo siti web <em>moderni</em> e curati.</h1>
+      <p class="sub">
+        Sono Pietro Corradi. Qui trovi i siti che ho realizzato: scoprili e
+        contattami per il tuo prossimo progetto.
+      </p>
+      <div>
+        <a class="btn" href="#progetti">Vedi i progetti</a><a class="btn o" href="#contatti">Contattami</a>
+      </div>
+    </section>
+
+    <section id="progetti">
+      <div class="head">
+        <span>Progetti</span>
+        <h2>I siti che ho fatto</h2>
+      </div>
+      <div class="grid">
+        <a class="card" href="https://pietrocorradi.github.io/Sito-Web-Rebecca-Corradi/#home" target="_blank"
+          rel="noopener">
+          <div class="top"><span>01</span><span class="arrow">→</span></div>
+          <div>
+            <h3>Rebecca Corradi - Counseling</h3>
+            <p>Promozione dell'attività di Counseling per un privato</p>
+          </div>
+        </a>
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <div class="top"><span>02</span><span class="arrow">→</span></div>
+          <div>
+            <h3>Nome sito 2</h3>
+            <p>Breve descrizione del progetto e delle tecnologie usate.</p>
+          </div>
+        </a>
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <div class="top"><span>03</span><span class="arrow">→</span></div>
+          <div>
+            <h3>Nome sito 3</h3>
+            <p>Breve descrizione del progetto e delle tecnologie usate.</p>
+          </div>
+        </a>
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <div class="top"><span>04</span><span class="arrow">→</span></div>
+          <div>
+            <h3>Nome sito 4</h3>
+            <p>Breve descrizione del progetto e delle tecnologie usate.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="chi-sono">
+      <div class="head">
+        <span>Chi sono</span>
+        <h2>Un po’ su di me</h2>
+      </div>
+      <div class="about">
+        <div class="photo">
+          <!-- FOTO: inserisci il percorso o i dati dell'immagine nell'attributo src -->
+          <img id="foto" alt="Pietro Corradi" src="photo/Pietro.jpeg" onerror="this.style.display = 'none'"
+            onload="this.nextElementSibling.style.display = 'none'" />
+          <span class="ph">PC</span>
+        </div>
+        <div>
+          <p>
+            Sono Pietro Corradi, studente di Informatica all’Università di
+            Torino. Mi piace trasformare le idee in siti web chiari, veloci e
+            curati nei dettagli.
+          </p>
+          <p>
+            Dopo essermi diplomato presso l'istituto tecnico M. Buniva di
+            Pinerolo (TO) ho scelto di frequentare l'Università di Torino per
+            approfondire le mie conoscenze nel campo dell'informatica.
+            Prediligo il campo della Cybersecurity e delle infrastrutture di
+            rete, ma mi interesso anche allo sviluppo web e alla
+            programmazione in generale.
+          </p>
+          <div class="chips">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>[Altre skill]</span>
+          </div>
+          <div class="facts">
+            <div>
+              <b>Diploma</b>Perito informatico e telecomuncazioni (81/100)
+            </div>
+            <div><b>Studi</b>Informatica (L-31 R), UniTo</div>
+            <div><b>Inglese</b>Certificato IELTS 6.0 (B2)</div>
+            <div><b>Hobby</b>Sport di endurance</div>
+          </div>
+          <!-- CV: sostituisci # con il link al tuo PDF -->
+          <div class="cv">
+            <a class="btn" href="file/CV_CorradiPietro_ITA.pdf" target="_blank" rel="noopener">Scarica il mio CV (PDF)
+              ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contatti">
+      <div class="contact">
+        <div>
+          <div class="head" style="margin: 0"><span>Contatti</span></div>
+          <h2>Hai un progetto in mente?</h2>
+          <p class="s">
+            Scrivimi per chiedere informazioni: ti rispondo il prima
+            possibile.
+          </p>
+          <ul class="cinfo">
+            <li><b>Email</b><a href="mailto:pietrocorradi@outlook.com">pietrocorradi@outlook.com</a></li>
+            <li><b>Telefono</b><a href="tel:+393420115149">+39 342 011 5149</a></li>
+          </ul>
+        </div>
+        <form id="f">
+          <div>
+            <label for="nome">Nome</label><input id="nome" required placeholder="Il tuo nome" />
+          </div>
+          <div>
+            <label for="mail">Email</label><input id="mail" type="email" required placeholder="nome@email.it" />
+          </div>
+          <div>
+            <label for="telefono">Telefono</label><input id="telefono" type="tel" autocomplete="tel"
+              pattern="^\+?[0-9\s\-()]{7,20}$" required placeholder="+39 000 000 0000" />
+          </div>
+          <div>
+            <label for="msg">Messaggio</label><textarea id="msg" required
+              placeholder="Scrivi qui la tua richiesta…"></textarea>
+          </div>
+          <div>
+            <button class="btn" type="submit">Richiedi informazioni</button>
+          </div>
+          <p class="note" id="note"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <!-- SOCIAL: sostituisci ogni # con il link al tuo profilo; elimina quelli che non ti servono -->
+    <div class="social">
+      <a href="https://www.linkedin.com/in/pietro-corradi-b060191b6/" target="_blank" rel="noopener"><svg
+          viewBox="0 0 24 24" fill="currentColor">
+          <rect x="2" y="2" width="20" height="20" rx="4" />
+          <path fill="#141414"
+            d="M6 10h2.4v8H6zM7.2 6a1.4 1.4 0 1 1 0 2.800 1.400 1.400 0 0 1 0-2.800zM10.200 10h2.300v1.100c.4-.7 1.200-1.300 2.500-1.300 2.400 0 3 1.500 3 3.600V18h-2.400v-3.900c0-.9-.2-1.700-1.200-1.700s-1.400.8-1.400 1.800V18h-2.400z" />
+        </svg>LinkedIn</a>
+      <a href="https://github.com/pietrocorradi" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"
+          fill="currentColor">
+          <path
+            d="M12 .5C5.650.5.500 5.650.500 12c0 5.080 3.290 9.390 7.860 10.910.580.100.790-.250.790-.560v-2c-3.200.700-3.870-1.370-3.870-1.370-.520-1.330-1.280-1.680-1.280-1.680-1.040-.710.080-.700.080-.700 1.150.080 1.760 1.180 1.760 1.180 1.030 1.760 2.690 1.250 3.350.960.100-.740.400-1.250.730-1.540-2.550-.290-5.240-1.280-5.240-5.690 0-1.260.450-2.280 1.180-3.090-.120-.290-.510-1.460.110-3.050 0 0 .970-.310 3.170 1.180a11 11 0 0 1 5.770 0c2.200-1.490 3.170-1.180 3.170-1.180.620 1.590.230 2.760.110 3.050.740.810 1.180 1.830 1.180 3.090 0 4.420-2.700 5.400-5.270 5.680.410.360.780 1.060.780 2.140v3.170c0 .310.210.670.800.560A11.500 11.500 0 0 0 23.500 12C23.500 5.650 18.350.5 12 .5z" />
+        </svg>GitHub</a>
+      <a href="https://www.instagram.com/pietrocorradi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="4" />
+          <circle cx="17.500" cy="6.500" r=".6" fill="currentColor" />
+        </svg>Instagram</a>
+      <!-- <a href="#" target="_blank" rel="noopener"
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+          >
+            <path stroke-width="2.400" d="M4.500 4l15 16" />
+            <path
+              stroke-width="1.800"
+              d="M19.500 4l-6.300 6.800M10.800 13.200L4.500 20"
+            /></svg
+          >X</a
+        > -->
+      <a href="https://www.facebook.com/pietro.corradi.37" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"
+          fill="currentColor">
+          <path
+            d="M13.500 22v-8.500h2.900l.5-3.500h-3.400V7.800c0-1 .3-1.700 1.800-1.700H17V3c-.3 0-1.300-.1-2.500-.1-2.600 0-4.300 1.600-4.300 4.500V10H7.300v3.500h2.900V22z" />
+        </svg>Facebook</a>
+      <a href="https://wa.me/393420115149?text=Ciao%20Pietro%2C%20ho%20visto%20il%20tuo%20portfolio%20e%20vorrei%20avere%20qualche%20informazione."
+        target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 21l1.600-4.800A9 9 0 1 1 8 19.400z" />
+          <path d="M9 8.500c0 3.500 3 6.500 6.500 6.500l1-1.500-2-1-1 .8c-1-.4-2-1.400-2.400-2.400l.8-1-1-2z" />
+        </svg>WhatsApp</a>
+    </div>
+    © 2026 Pietro Corradi · Torino
+  </footer>
+  <script>
+document.getElementById("f").addEventListener("submit", async function (e) {
+  e.preventDefault();
+  var form = e.target;
+  var note = document.getElementById("note");
+  var btn = form.querySelector("button[type=submit]");
+  var data = {
+    nome: document.getElementById("nome").value,
+    email: document.getElementById("mail").value,
+    telefono: document.getElementById("telefono").value,
+    messaggio: document.getElementById("msg").value
+  };
+  btn.disabled = true;
+  note.textContent = "Invio in corso…";
+  try {
+    var r = await fetch("https://formspree.io/f/xrppwqbg", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify(data)
+    });
+    if (r.ok) {
+      note.textContent = "Messaggio inviato! Ti ricontatterò presto.";
+      form.reset();
+    } else {
+      note.textContent = "Qualcosa è andato storto, riprova o scrivimi direttamente.";
+    }
+  } catch (err) {
+    note.textContent = "Errore di connessione, riprova.";
+  }
+  btn.disabled = false;
+});
+</script>
+</body>
+
+</html>
